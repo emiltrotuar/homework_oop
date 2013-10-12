@@ -46,7 +46,7 @@ describe Library do
 		end.to raise_error RuntimeError
 		expect do
 			BookOrder.new 'Reader', 'Book', Date.today, nil
-		end.not_to raise_error RuntimeError
+		end.not_to raise_error
 	end
 
 	it 'should get an array as an argument' do

@@ -1,5 +1,5 @@
 class BookOrder
-	attr_reader :reader, :book, :order_date, :issue_date
+	attr_accessor :reader, :book, :order_date, :issue_date
 
 	def initialize reader, book, order_date, issue_date
 		@reader     = reader if reader.is_a? String
